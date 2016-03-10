@@ -1,28 +1,28 @@
 digraph {
 	//Nodes (Questions)
-	A1[label="About how often do\nyou drink alcohol?\nField "]
-	A1A[label="Did you previously\ndrink alcohol?\nField "]
+	A1[label="About how often do\nyou drink alcohol?\nField 1558"]
+	A1A[label="Did you previously\ndrink alcohol?\nField 3731"]
 	
-	A2B[label="In an average MONTH,\nhow many glasses of red\nwine would you drink?\nField "]
-	A2C[label="In an average MONTH,\nhow many glasses of white\nwine or champagne\nwould you drink?\nField "]
-	A2E[label="In an average MONTH,\nhow many pints of beer\nor cider would you drink?\nField "]
-	A2A[label="In an average MONTH,\nhow many measures of spirits\nor liqueurs would you drink?\nField "]
-	A2F[label="In an average MONTH,\nhow many glasses of fortified\nwine would you drink?\nField "]
-	A2G[label="In an average MONTH,\nhow many glasses of other\nalcoholic drinks (such as \nalcopops) would you drink?\nField "]
+	A2B[label="In an average MONTH,\nhow many glasses of red\nwine would you drink?\nField 4407"]
+	A2C[label="In an average MONTH,\nhow many glasses of white\nwine or champagne\nwould you drink?\nField 4418"]
+	A2E[label="In an average MONTH,\nhow many pints of beer\nor cider would you drink?\nField 4429"]
+	A2A[label="In an average MONTH,\nhow many measures of spirits\nor liqueurs would you drink?\nField 4440"]
+	A2F[label="In an average MONTH,\nhow many glasses of fortified\nwine would you drink?\nField 4451"]
+	A2G[label="In an average MONTH,\nhow many glasses of other\nalcoholic drinks (such as \nalcopops) would you drink?\nField 4462"]
 
-	A3B[label="In an average WEEK,\nhow many glasses of red\nwine would you drink?\nField "]
-	A3C[label="In an average WEEK,\nhow many glasses of white\nwine or champagne\nwould you drink?\nField "]
-	A3E[label="In an average WEEK,\nhow many pints of beer\nor cider would you drink?\nField "]
-	A3A[label="In an average WEEK,\nhow many measures of spirits\nor liqueurs would you drink?\nField "]
-	A3F[label="In an average WEEK,\nhow many glasses of fortified\nwine would you drink?\nField "]
-	A3G[label="In an average WEEK,\nhow many glasses of other\nalcoholic drinks (such as \nalcopops) would you drink?\nField "]
+	A3B[label="In an average WEEK,\nhow many glasses of red\nwine would you drink?\nField 1568"]
+	A3C[label="In an average WEEK,\nhow many glasses of white\nwine or champagne\nwould you drink?\nField 1578"]
+	A3E[label="In an average WEEK,\nhow many pints of beer\nor cider would you drink?\nField 1588"]
+	A3A[label="In an average WEEK,\nhow many measures of spirits\nor liqueurs would you drink?\nField 1598"]
+	A3F[label="In an average WEEK,\nhow many glasses of fortified\nwine would you drink?\nField 1608"]
+	A3G[label="In an average WEEK,\nhow many glasses of other\nalcoholic drinks (such as \nalcopops) would you drink?\nField 5364"]
 
-	A5[label="When you drink alcohol is\nit usually with meals?\nField "]
+	A5[label="When you drink alcohol is\nit usually with meals?\nField 1618"]
 
-	A6[label="Compared to 10 years\nago do you drink...\nField "]
+	A6[label="Compared to 10 years\nago do you drink...\nField 1628"]
 
-	A7[label="Why did you reduce\nthe amount you drank?\nField "]
-	A7A[label="Why did you stop\ndrinking alcohol?\nField "]
+	A7[label="Why did you reduce\nthe amount you drank?\nField 2664"]
+	A7A[label="Why did you stop\ndrinking alcohol?\nField 3859"]
 
 	End2[label="End"]
 	End3[label="End"]
