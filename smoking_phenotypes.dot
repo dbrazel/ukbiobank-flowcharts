@@ -42,7 +42,67 @@ digraph {
 
 	S13[label="Outside of your home, about\nhow many hours per WEEK are\nyou exposed to other\npeople's tobacco smoke?\nField 1279"]
 
+	End2[label="End"]
+	End3[label="End"]
+
 	//Edges (Routing Logic)
+	S1 -> S3[label="Most or all days"]
 	S1 -> S2[label="Else"]
-	S1 -> S3[label="Most or all"]
+
+	S2 -> S6[label="Most or all days"]
+	S2 -> S11[label="Never or NA"]
+	S2 -> S2A[label="Else"]
+
+	S2A -> S11
+
+	S3 -> S4
+
+	S4 -> S4A[label="Cigarettes"]
+	S4 -> S4AA[label="Cigars or pipes"]
+	S4 -> S5[label="Never or NA"]
+
+	S4AA -> S4AB[label="Yes"]
+	S4AA -> S5[label="No or NA"]
+
+	S4AB -> S4AC
+
+	S4AC -> S5
+
+	S4A -> S4B
+
+	S4B -> S4C
+
+	S4C -> S5
+
+	S5 -> S5AA
+
+	S5AA -> S5A
+
+	S5A -> S5B[label="Less"]
+	S5A -> End[label="Else"]
+
+	S5B -> End2
+
+	S6 -> S7
+
+	S7 -> S7A[label="Cigarettes"]
+	S7 -> S8[label="Else"]
+
+	S7A -> S8
+
+	S8 -> S9
+
+	S9 -> S10
+
+	S10 -> S10A
+
+	S10A -> S10B
+
+	S10B -> S11
+
+	S11 -> S12
+
+	S12 -> S13
+
+	S13 -> End3
 }
