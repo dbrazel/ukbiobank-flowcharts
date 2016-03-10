@@ -1,0 +1,8 @@
+digraph {
+S1[label="Do you smoke tobacco now?\nField 1239"]
+S2[label="In the past, how often\nhave you smoked tobacco?\nField 1249"]
+S3[label="How old were you when\n you first started smoking\non most days?\nField 3436"]
+
+S1 -> S2[label="Else"]
+S1 -> S3[label="Most or all"]
+}
