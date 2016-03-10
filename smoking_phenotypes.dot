@@ -1,8 +1,48 @@
 digraph {
-S1[label="Do you smoke tobacco now?\nField 1239"]
-S2[label="In the past, how often\nhave you smoked tobacco?\nField 1249"]
-S3[label="How old were you when\n you first started smoking\non most days?\nField 3436"]
+	//Nodes (Questions)
+	S1[label="Do you smoke tobacco now?\nField 1239"]
 
-S1 -> S2[label="Else"]
-S1 -> S3[label="Most or all"]
+	S2[label="In the past, how often\nhave you smoked tobacco?\nField 1249"]
+	S2A[label="In your lifetime, have\nyou smoked a total of at\nleast 100 times?\nField 2644"]
+
+	S3[label="How old were you when\n you first started smoking\non most days?\nField 3436"]
+
+	S4[label="What type of tobacco do\nyou mainly smoke?\nField 3446"]
+
+	//This question was not assigned a field ID and answers are not directly reported
+	S4AA[label="Did you previously\nsmoke cigarettes on\nmost or all days?"]
+
+	S4AB[label="About how many\ncigarettes did you smoke\non average each day?\nField 6183"]
+	S4AC[label="How old were you\nwhen you last smoked\ncigarettes on most days?\nField 6194"]
+	S4A[label="About how many\ncigarettes do you smoke\non average each day?\nField 3456"]
+	S4B[label="How soon after waking\ndo you smoke your first\ncigarette of the day?\nField 3466"]
+	S4C[label="How easy or difficult\nwould you find it to\ngo without smoking for\na whole day?\nField 3476"]
+
+	S5[label="Have you tried to\ngive up smoking?\nField 3486"]
+	S5AA[label="Do you want to\nstop smoking?\nField 3496"]
+	S5A[label="Compared to 10 years\nago do you smoke...\nField 3506"]
+	S5B[label="Why did you reduce\nyour smoking?\nField 6158"]
+
+	S6[label="How old were you when\nyou first started smoking\non most days?\nField 2867"]
+
+	S7[label="What type of tobacco\ndid you usually smoke?\nField 2877"]
+	S7A[label="About how many\ncigarettes did you smoke\non average each day?\nField 2887"]
+
+	S8[label="How old were you\nwhen you last smoked\non most days?\nField 2897"]
+
+	S9[label="In the time that you\nsmoked, did you ever stop\nfor more than 6 months?\nField 2907"]
+
+	S10[label="Why did you stop smoking?\nField 6157"]
+	S10A[label="How many times did\nyou try to give up\nsmoking before you\nwere successful?\nField 2926"]
+	S10B[label="Do you think you\nmay start smoking again?\nField 2936"]
+
+	S11[label="Does anyone in\nyour household smoke?\nField 1259"]
+
+	S12[label="At home, about how many\nhours per WEEK are\nyou exposed to other\npeople's tobacco smoke?\nField 1269"]
+
+	S13[label="Outside of your home, about\nhow many hours per WEEK are\nyou exposed to other\npeople's tobacco smoke?\nField 1279"]
+
+	//Edges (Routing Logic)
+	S1 -> S2[label="Else"]
+	S1 -> S3[label="Most or all"]
 }
