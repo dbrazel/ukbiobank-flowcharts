@@ -23,4 +23,40 @@ digraph {
 
 	A7[label="Why did you reduce\nthe amount you drank?\nField "]
 	A7A[label="Why did you stop\ndrinking alcohol?\nField "]
+
+	End2[label="End"]
+	End3[label="End"]
+	End4[label="End"]
+
+	//Edges (Routing Logic)
+	A1 -> A2B[label="<Once a week"]
+	A1 -> A1A[label="Never"]
+	A1 -> End[label="NA"]
+	A1 -> A3B[label=">=Once a week"]
+
+	A1A -> End2[label="No or NA"]
+	A1A -> A7A[label="Yes"]
+
+	A2B -> A2C
+	A2C -> A2E
+	A2E -> A2A
+	A2A -> A2F
+	A2F -> A2G
+	A2G -> A5
+
+	A3B -> A3C
+	A3C -> A3E
+	A3E -> A3A
+	A3A -> A3F
+	A3F -> A3G
+	A3G -> A5
+
+	A5 -> A6
+
+	A6 -> A7[label="Less"]
+	A6 -> End3[label="Else"]
+
+	A7 -> End3
+
+	A7A -> End4
 }
